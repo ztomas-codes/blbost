@@ -1,0 +1,44 @@
+.App
+{
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  background-image: url('https://pics.clipartpng.com/Heart_Shape_PNG_Clipart-3166.png');
+  background-size: cover;
+  height: 540px;
+  position: static;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.App input
+{
+  margin-top: 20px;
+  top: 30%;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+  color: white;
+}
+
+.App p
+{
+  position: relative;
+  top: 40%;
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+body
+{
+  background-color: #282c34;
+  color: white;
+}
