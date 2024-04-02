@@ -1,14 +1,3 @@
-.App
-{
-  text-align: center;
-  justify-content: center;
-  vertical-align: middle;
-  height: 540px;
-  position: static;
-  width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .App img
 {
@@ -20,27 +9,26 @@
   height: 60vh;
 }
 
-.App input
+#inputs
 {
-  margin-top: 20px;
+  position: absolute;
   top: 30%;
-  position: relative;
-  background-color: transparent;
-  border: none;
-  padding-bottom: 20px;
-  text-align: center;
-  font-weight: bolder;
-  font-size: larger;
-  color: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.App p
+#inputs input
 {
-  position: relative;
-  top: 40%;
+  margin: 10px;
+  padding: 10px;
+  background-color: transparent;
+  width: fit-content;
+  text-align: center;
+  font-weight: 900;
+  border: 1px solid transparent;
   color: white;
-  font-size: larger;
-  font-weight: bolder;
 }
 
 body

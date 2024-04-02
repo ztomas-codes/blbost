@@ -37,16 +37,23 @@ function App() {
   }, [names]);
 
   return (
-    <div className='App'>
-      <img src="https://pics.clipartpng.com/Heart_Shape_PNG_Clipart-3166.png"/>
-      <input type="text" placeholder="První jméno" value={names.firstname} onChange={(event)=> {
-        setNames({...names, firstname: event.target.value});
-      }}/>
-      <input type="text" placeholder="Druhé jméno" value={names.lastname} onChange={(event)=> {
-        setNames({...names, lastname: event.target.value});
-      }}/>
-      <p>Shoda je {shoda}%</p>
-    </div>
+    <>
+      <div className='App'>
+        <img src="https://pics.clipartpng.com/Heart_Shape_PNG_Clipart-3166.png"/>
+
+      </div>
+      <div id="inputs">
+        <input type="text" placeholder="První jméno" value={names.firstname} onChange={(event)=> {
+          setNames({...names, firstname: event.target.value});
+        }}/>
+        <input type="text" placeholder="Druhé jméno" value={names.lastname} onChange={(event)=> {
+          setNames({...names, lastname: event.target.value});
+        }}/>
+        <p>Shoda je {shoda}%</p>
+      </div>
+    </>
+
+    
   );
 }
 
