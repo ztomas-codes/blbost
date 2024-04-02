@@ -38,6 +38,7 @@ function App() {
 
   return (
     <div className='App'>
+      <img src="https://pics.clipartpng.com/Heart_Shape_PNG_Clipart-3166.png"/>
       <input type="text" placeholder="První jméno" value={names.firstname} onChange={(event)=> {
         setNames({...names, firstname: event.target.value});
       }}/>

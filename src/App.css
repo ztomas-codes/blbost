@@ -3,14 +3,21 @@
   text-align: center;
   justify-content: center;
   vertical-align: middle;
-  background-image: url('https://pics.clipartpng.com/Heart_Shape_PNG_Clipart-3166.png');
-  background-size: cover;
   height: 540px;
   position: static;
-  width: 600px;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+}
+
+.App img
+{
+  width: 50vw;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  height: 60vh;
 }
 
 .App input
@@ -20,7 +27,6 @@
   position: relative;
   background-color: transparent;
   border: none;
-  border-bottom: 3px solid white;
   padding-bottom: 20px;
   text-align: center;
   font-weight: bolder;
@@ -41,4 +47,17 @@ body
 {
   background-color: #282c34;
   color: white;
+}
+
+/* media query when on mobile adjust image*/
+@media only screen and (max-width: 600px)
+{
+  .App img
+  {
+    width: 90vw;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    height: 40vh;
+  }
 }
